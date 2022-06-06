@@ -13,10 +13,6 @@ export const obj = {
   end: "15:00",
 };
 
-export const getData = fetch("./timeAppoitmen.json")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-
 export const freeTimeDoctor = () => {
   const freeTime = [];
   let startWork;
