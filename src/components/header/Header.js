@@ -5,12 +5,18 @@ import { colors, arrNavigate, varStyle } from "../../helpers/constants";
 import Icon from "../svg/Icon";
 import { useState } from "react";
 import MenuMobile from "../menu/MenuMobile";
+import { freeTimeDoctor } from "../../helpers/functions";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const showFreeTimeDoctor = () => {
+    console.log(freeTimeDoctor());
+  } 
+
   let id = 0;
   return (
     <div className={style.container}>
@@ -37,7 +43,7 @@ const Header = () => {
           />
         </div>
       </ul>
-      <div className={style.btnSign}>
+      <div  onClick={showFreeTimeDoctor} className={style.btnSign}>
         <Button
           styleBtn={{
             background: colors.darkText,
