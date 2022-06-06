@@ -1,0 +1,81 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px 10px 40px;
+  margin: 10px 20px 10px 20px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+
+  background: var(--grey-bg-color);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: auto;
+}
+
+.menuIcon:active {
+  width: 25px;
+  height: 25px;
+}
+
+.list {
+  display: none;
+}
+
+.btnSign {
+  display: none;
+}
+
+@media screen and (min-width: 780px) {
+  .container {
+    font-size: 12px;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+  }
+
+  .item {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .btnSign {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    font-size: 14px;
+  }
+
+  .btnSign {
+    display: inline;
+  }
+}
+
+.down {
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.menu {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.btnContainer {
+  margin-top: 10px;
+}
+
+.list {
+  margin-top: 15px;
+}
+
+.item {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.item:active {
+   background: var(--green-color);
+  }
